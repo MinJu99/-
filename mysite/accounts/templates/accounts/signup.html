@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href= "{% static 'css/login.css' %}">
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="container">
+            <div class="inner">
+                <!-- header -->
+                <header class="header">
+                    <h1>
+                        <span class="header_tit">로고</span>
+                        <a href="" class="page_move">
+                            <img src="{% static 'img/LOGO(1).png' %}" src="logo">
+                        </a>
+                    </h1>
+                </header>
+                <!-- form -->
+                <form class="form" action="{% url 'accounts:main' %}" method="post">
+                    {% csrf_token %}
+                    <div class="input_box">
+                        <input id="id" type="input" name="username" placeholder="아이디"/>
+                    </div>
+                    <div class="input_box">
+                        <input id="password" type="password" name="password1" placeholder="비밀번호">
+                    </div>
+                    <div class="input_box">
+                        <input type="password2" name="password2" placeholder="비밀번호 확인"></div>
+                    <div class="input_box">
+                        <input id="email" type="input" name="email" placeholder="이메일주소 입력"/>
+                    </div>
+                    <div class="button_box">
+                        <button type="submit" class="btn" value="Sign Up">
+                            <span>가입하기</span>
+                        </button>
+                    </div>
+                </form>
+             </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/login.js' %}"></script>
+</body>
+</html>

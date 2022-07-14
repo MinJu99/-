@@ -1,0 +1,81 @@
+/* CSS declarations go here */
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+
+
+* {
+    margin-bottom: 0px;
+    margin-top:0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.bg{
+    background: url(fundog.jpg);
+    background-size: cover;
+    color: white;
+    height: 500px;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+.navbar{
+    margin-bottom: 0px;
+    margin-top:0px;
+
+
+}
+.help{
+    text-align: right;
+    margin-bottom: 0px;
+    height: 300px;
+
+}
+
+.spread{margin-bottom: 0px;}
+
+body {
+
+    /* set this equal to navbar's height */
+}
+
+.usp{
+    text-align: center;
+}
+
+.row {
+    display: table;
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.profile{
+    margin-bottom: 100px;
+    margin-top:30px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
